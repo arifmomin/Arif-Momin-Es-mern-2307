@@ -1,0 +1,2032 @@
+/* ==============================font link start======================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* ----------------------------font link end--------------------------- */
+/* ==============================common css start======================== */
+* {
+    margin: 0%;
+    padding: 0%;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+img {
+    vertical-align: middle;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+img,
+span,
+a {
+    margin: 0%;
+    padding: 0%;
+    outline: 0;
+}
+
+:root {
+    --Background-Color: #1C1E53;
+    --White: #FFFFFF;
+    --Gray: #F4F6FC;
+    --Yellow-Color: #FCD980;
+    --Dark-Blue: #282938;
+    --Royal-Blue: #2405F2;
+    --Poppins: "Poppins", sans-serif;
+    --Manrope: "Manrope", sans-serif;
+}
+
+body {
+    font-family: var(--Poppins);
+}
+
+/* ----------------------------common css end--------------------------- */
+/* =============================menu bar Fixed start========================= */
+.menu-Fixed{
+    width: 100%;
+    position: fixed !important;
+    top: 0%;
+    left: 0%;
+    z-index: 9999;
+    animation: menubar 1s linear;
+}
+@keyframes menubar{
+    from{
+        top: -20%;
+    }
+    to{
+        top: 0%;
+    }
+}
+.navbar-brand{
+    transition: 3s linear;
+}
+/* ---------------------------menu bar fiend end---------------------------- */
+/* =============================Back To Top start========================= */
+.backToTop{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 3px solid var(--Background-Color);
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 40px;
+    right: 50px;
+    cursor: pointer;
+    z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+    transition: linear .3s;
+}
+.backToTop:hover{
+    border-color: var(--Yellow-Color);
+}
+.backToTop:hover .backtoTopIcon{
+    color: var(--Yellow-Color);
+}
+.goTop{
+    opacity: 1;
+    visibility: visible;
+    animation: 1s linear backtotop;
+}
+@keyframes backtotop{
+    from{
+        bottom: -40px;
+    }to{
+        bottom: 40px;
+    }
+}
+.backtoTopIcon{
+    font-size: 20px;
+    color: var(--Royal-Blue);
+    transition: linear .3s;
+}
+/* ---------------------------Back To Top end---------------------------- */
+/* ==============================menu Markup start======================== */
+.menu_bar {
+    padding: 16px 0;
+    background: var(--Background-Color);
+}
+
+.navbar-nav {
+    gap: 32px;
+}
+
+.navbar-nav .menu-item .menu-link {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    color: #BBBBCB;
+    transition: all linear .3s;
+    position: relative;
+}
+
+.navbar-nav .menu-item .menu-link:hover {
+    color: var(--White);
+}
+
+.navbar-nav .menu-item .menu-link::after {
+    position: absolute;
+    content: '';
+    width: 0%;
+    height: 2px;
+    top: 0%;
+    left: 0%;
+    background: var(--Yellow-Color);
+    transition: all linear .3s;
+    z-index: 99;
+}
+
+.navbar-nav .menu-item .menu-link:hover::after {
+    width: 100%;
+}
+
+.navbar-nav .menu-item .menu-link::before {
+    position: absolute;
+    content: '';
+    width: 0%;
+    height: 2px;
+    bottom: 1%;
+    right: 0%;
+    background: var(--Yellow-Color);
+    transition: all linear .3s;
+    z-index: 99;
+}
+
+.navbar-nav .menu-item .menu-link:hover::before {
+    width: 100%;
+}
+
+.menu_button a {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--White);
+    padding: 16px 48px;
+    background: transparent;
+    border: 2px solid rgba(244, 246, 252, 0.37);
+    border-radius: 41px;
+    margin-left: 48px;
+    transition: all linear .3s;
+}
+
+.menu_button a:hover {
+    border-color: var(--Yellow-Color);
+    color: var(--Yellow-Color);
+}
+
+/* ----------------------------menu Markup end--------------------------- */
+/* ==============================Banner Markup start======================== */
+#banner_part {
+    padding: 192px 0 194px;
+    background: var(--Background-Color);
+}
+
+.banner_heading h1 {
+    font-size: 54px;
+    font-weight: 600;
+    color: var(--White);
+    line-height: 74px;
+}
+
+.banner_heading p {
+    max-width: 582px;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.70);
+    line-height: 28px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.banner_button a {
+    padding: 12px 56px;
+    background: var(--Yellow-Color);
+    border: 2px solid var(--Yellow-Color);
+    border-radius: 41px;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: var(--Manrope);
+    color: var(--Dark-Blue);
+    transition: all linear .3s;
+}
+
+.banner_button a:hover {
+    background: transparent;
+    color: var(--White);
+}
+
+.banner_scnd_button a {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    color: var(--White);
+    transition: all linear .3s;
+}
+
+.banner_scnd_button a span {
+    margin-left: 10px;
+
+}
+
+.banner_scnd_button a:hover {
+    transform: translateX(5px);
+    color: var(--Yellow-Color);
+}
+
+/* ----------------------------Banner Markup end--------------------------- */
+/* ============================work Markup start========================== */
+#work_part {
+    padding: 128px 0;
+    background: var(--Gray);
+}
+
+.work_left h2 {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 64px;
+    color: var(--Dark-Blue);
+}
+
+.work_left p {
+    max-width: 405px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: var(--Dark-Blue);
+    margin: 16px 0;
+}
+
+.work_left .banner_scnd_button a {
+    color: var(--Royal-Blue);
+}
+
+.work_left .banner_scnd_button a:hover {
+    color: var(--Royal-Blue);
+}
+
+.work_right h3 {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 48px;
+    color: var(--Dark-Blue);
+    margin: 16px 0px 8px;
+}
+
+.work_right p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: var(--Dark-Blue);
+}
+
+/* ----------------------------work Markup end---------------------------- */
+/* ============================project Markup start========================== */
+#project_part {
+    padding: 50px 0;
+    background: var(--White);
+}
+
+.project_title_left h2 {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 64px;
+    color: var(--Dark-Blue);
+}
+
+.project_title_right .banner_scnd_button a {
+    color: var(--Dark-Blue);
+}
+
+.project_title_right .banner_scnd_button a:hover {
+    color: var(--Royal-Blue);
+}
+
+.project_row {
+    margin-top: 64px;
+}
+
+.project_left {
+    position: relative;
+    overflow: hidden;
+}
+
+.project_left_overlay {
+    position: absolute;
+    width: 48%;
+    height: 100%;
+    background: linear-gradient(rgba(28, 30, 83, 0.42), rgb(28, 30, 83));
+    top: 0%;
+    left: -48%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 0px 35px 76px 48px;
+    transition: all linear .4s;
+}
+
+.project_left:hover .project_left_overlay {
+    left: 0%;
+}
+
+.project_left_overlay h3 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    color: var(--White);
+}
+
+.project_left_overlay p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    color: var(--White);
+    margin: 16px 0 40px;
+}
+
+.project_left_overlay .banner_scnd_button a {
+    color: var(--Yellow-Color);
+}
+
+.project_right_top .project_left_overlay {
+    width: 100%;
+    left: 0%;
+    top: -100%;
+    padding: 0px 36px 45px 56px;
+    row-gap: 10px;
+    transition: all linear .3s;
+}
+
+.project_right_top:hover .project_left_overlay {
+    top: 0%;
+}
+
+.project_right_bottom .project_left_overlay {
+    width: 100%;
+    left: 0%;
+    top: 100%;
+    padding: 0px 36px 45px 56px;
+    row-gap: 10px;
+    transition: all linear .3s;
+}
+
+.project_right_bottom:hover .project_left_overlay {
+    top: 0%;
+}
+
+.project_right_top .project_left_overlay h3 {
+    max-width: 250px;
+}
+
+.project_right_bottom .project_left_overlay h3 {
+    max-width: 250px;
+}
+
+/* ----------------------------project Markup end---------------------------- */
+/* ============================design Markup start========================== */
+#design_part {
+    padding: 128px 0;
+    background: var(--Gray);
+}
+
+.design_title h2 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    text-align: center;
+    color: var(--Dark-Blue);
+}
+
+.design_title h3 {
+    max-width: 630px;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 64px;
+    color: var(--Dark-Blue);
+    margin: 0% auto;
+    margin-top: 12px;
+    margin-bottom: 47px;
+    text-align: center;
+}
+
+.design_col {
+    padding: 58px 32px 48px 48px;
+    background: var(--White);
+}
+
+.design_col h4 i {
+    font-size: 28px;
+    color: var(--Royal-Blue);
+}
+
+.design_col h5 {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    color: var(--Dark-Blue);
+    margin: 22px 0 12px;
+}
+
+.design_col p {
+    max-width: 324px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: var(--Dark-Blue);
+}
+
+/* ----------------------------design Markup end---------------------------- */
+/* ============================client Markup start========================== */
+#client_say {
+    padding: 130px 0;
+    background: var(--Gray);
+}
+
+.client_left h2 {
+    max-width: 327px;
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 56px;
+    color: var(--Dark-Blue);
+}
+
+.client_left p {
+    max-width: 327px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: rgba(40, 41, 56, 0.70);
+    margin-top: 10px;
+}
+
+.client_slider_item h3 {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 48px;
+    color: var(--Dark-Blue);
+    margin-bottom: 48px;
+}
+
+.client_name h4 {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32px;
+    color: var(--Dark-Blue);
+}
+
+.client_name h5 {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 28px;
+    color: var(--Dark-Blue);
+}
+
+/* ----------------------------client Markup end---------------------------- */
+/* ============================faq Markup start========================== */
+#faq_part {
+    padding: 50px 0;
+    background: var(--White);
+}
+
+.faq_left h2 {
+    max-width: 328px;
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 56px;
+    color: var(--Dark-Blue);
+    margin-bottom: 16px;
+}
+
+.faq_left .faq_link a {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32px;
+    color: rgba(37, 5, 242, 0.78);
+
+}
+
+.faq_accordion .accordion-item .accordion-button {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    color: var(--Dark-Blue);
+}
+
+.faq_accordion .accordion-item .accordion-button span {
+    color: var(--Royal-Blue);
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.accordion-item {
+    border: none;
+    border-bottom: 1px solid #ECECF1;
+}
+
+.accordion {
+    --bs-accordion-btn-focus-box-shadow: none;
+}
+
+.accordion-body p {
+    max-width: 624px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32px;
+    margin-left: 47px;
+    color: var(--Dark-Blue);
+}
+
+.accordion-button::after {
+    content: "\2b";
+    background-image: none;
+    font-size: 18px;
+    color: var(--Dark-Blue);
+    display: flex;
+    align-items: center;
+    font-family: "FontAwesome";
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: none;
+    transform: none;
+    font-size: 18px;
+    color: var(--Dark-Blue);
+    content: "\f00d";
+}
+
+/* ----------------------------faq Markup end---------------------------- */
+/* ============================inquiry Markup start========================== */
+#inquiry {
+    padding: 50px 0;
+    background: var(--White);
+}
+
+.inquiry_left {
+    height: 100%;
+    padding-bottom: 261px;
+    background: url(../image/inquiry\ .jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+
+.inquiry_left::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    background: rgba(28, 30, 83, 0.50);
+    z-index: -1;
+}
+
+.inquiry_left_content {
+    max-width: 464px;
+}
+
+.inquiry_left h2 {
+
+    font-size: 54px;
+    font-weight: 600;
+    line-height: 74px;
+    color: var(--White);
+    padding-top: 96px;
+}
+
+.inquiry_left p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    color: var(--White);
+    margin-top: 24px;
+}
+
+.inquiry_right {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background: #1C1E53;
+}
+
+.inquiry_right_content {
+    margin-top: 96px;
+}
+
+.inquiry_right_content h3 {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 48px;
+    color: var(--White);
+}
+
+.inquiry_right_content p {
+    max-width: 432px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    color: var(--White);
+    margin-top: 24px;
+    margin-bottom: 40px;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 14px 24px;
+    line-height: 38px;
+    color: var(--White) !important;
+    background-color: transparent;
+    background-clip: padding-box;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.form-control::placeholder {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: rgba(244, 246, 252, 0.50);
+}
+
+.form-control:focus {
+    color: #FFFFFF;
+    background-color: transparent;
+    border-color: rgba(255, 255, 255, 0.5);
+    outline: 0;
+    box-shadow: none;
+}
+
+.inquiry_button .btn {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 32px;
+    color: var(--Dark-Blue);
+    padding: 10px 0;
+    background: var(--Yellow-Color);
+}
+
+.btn-check:checked+.btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check)+.btn:active {
+    color: var(--White);
+    background-color: transparent;
+    border-color: var(--Yellow-Color);
+}
+
+.inquiry_button .secound_btn {
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32px;
+    background: transparent;
+    border: none;
+    margin-top: 28px;
+    color: var(--White);
+    transition: all linear .3s;
+    margin-bottom: 40px;
+}
+
+.inquiry_button .secound_btn span {
+    margin-left: 10px;
+}
+
+.inquiry_button .secound_btn:hover {
+    transform: translateX(5px);
+}
+
+/* ----------------------------inquiry Markup end---------------------------- */
+/* ============================blog Markup start========================== */
+#blog_part {
+    padding: 50px 0;
+    background: var(--White);
+}
+
+.blog_title h2 {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 64px;
+    color: var(--Dark-Blue);
+    margin-bottom: 64px;
+}
+
+.blog_col h3 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: var(--Dark-Blue);
+    margin: 40px 0 16px;
+}
+
+.blog_col h4 {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    color: var(--Dark-Blue);
+}
+
+.blog_col p {
+    max-width: 405px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: var(--Dark-Blue);
+    margin: 16px 0 32px;
+}
+
+.blog_col .blog_btn_modifier a {
+    color: var(--Dark-Blue);
+}
+
+/* ----------------------------blog Markup end---------------------------- */
+/* ============================footer Markup start========================== */
+#footer_part {
+    padding-top: 100px;
+    background: var(--Background-Color);
+}
+
+.footer_left_part p {
+    max-width: 399px;
+    margin: 22px 0px 86px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: var(--White);
+}
+
+.footerLeft_bottom_row {
+    padding: 16px 37px;
+    background: var(--Yellow-Color);
+}
+
+.footer_left_bottom h2 {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32px;
+    color: var(--Dark-Blue);
+}
+
+.footer_left_bottom a {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: var(--Dark-Blue);
+    transition: all linear .3s;
+}
+
+.footer_left_bottom a:hover {
+    color: var(--Royal-Blue);
+}
+
+.footer_right h3 {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 64px;
+    color: var(--White);
+}
+
+.footer_right p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: var(--Gray);
+    margin: 14px 0 28px;
+}
+
+.footer_icon {
+    display: flex;
+    gap: 25px;
+}
+
+.footer_icon a {
+    font-size: 18px;
+    color: var(--White);
+    transition: all linear .2s;
+}
+
+.footer_icon a:hover {
+    color: var(--Yellow-Color);
+    transform: scale(1.2);
+}
+
+.secound_footer {
+    padding: 32px 0;
+    background: var(--White);
+}
+
+.secound_footer .navbar-brand {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    color: var(--Dark-Blue);
+}
+
+.footer_list {
+    gap: 32px;
+}
+
+.footer_list .nav-item .nav-link {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: var(--Dark-Blue);
+    position: relative;
+    padding: 0%;
+    transition: all linear .3s;
+}
+
+.footer_list .nav-item .nav-link:hover {
+    color: var(--Royal-Blue);
+}
+
+.footer_list .nav-item .nav-link::after {
+    position: absolute;
+    content: '';
+    width: 0px;
+    height: 0px;
+    bottom: 0%;
+    left: 50%;
+    background: var(--Royal-Blue);
+    transition: all linear .3s;
+}
+
+.footer_list .nav-item .nav-link:hover::after {
+    width: 100%;
+    height: 2px;
+    left: 0%;
+}
+
+/* ----------------------------footer Markup end---------------------------- */
+/* ========================= about file start =========================*/
+/* ============================about Markup start========================== */
+#about_part {
+    padding: 128px 0;
+    background: var(--White);
+}
+
+.about_left h2 {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32px;
+    color: var(--Dark-Blue);
+}
+
+.about_left h1 {
+    font-size: 54px;
+    font-weight: 600;
+    line-height: 74px;
+    color: var(--Dark-Blue);
+    margin: 8px 0 31px;
+}
+
+.about_left p {
+    max-width: 484px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: var(--Dark-Blue);
+}
+
+/* ----------------------------about Markup end---------------------------- */
+/* ============================goal Markup start========================== */
+#goal_part {
+    padding-top: 80px;
+    background: var(--White);
+}
+
+.goal_left h2 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: var(--Dark-Blue);
+}
+
+.goal_common_head h3 {
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 56px;
+    color: var(--Dark-Blue);
+    margin: 4px 0 16px;
+}
+
+.goal_common_head p {
+    max-width: 515px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: var(--Dark-Blue);
+}
+
+.goal_secound_row {
+    margin-top: 80px;
+}
+
+/* ----------------------------goal Markup end---------------------------- */
+/* ============================process Markup start========================== */
+#process_part {
+    padding: 128px 0;
+    background: var(--White);
+}
+
+.process_title h2 {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 64px;
+    color: var(--Dark-Blue);
+    text-align: center;
+    margin-bottom: 104px;
+}
+
+.process_animation {
+    width: 100% !important;
+}
+
+.process_animation::after {
+    position: absolute;
+    content: '';
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    top: -50px;
+    left: 0%;
+    background: var(--Royal-Blue);
+}
+
+.process_animation::before {
+    position: absolute;
+    content: '';
+    width: 60%;
+    border-top: 1px dashed #2405F2;
+    top: -38px;
+    right: 27%;
+    background: transparent;
+}
+
+.process_col h3 {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    color: var(--Dark-Blue);
+}
+
+.process_col p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: var(--Dark-Blue);
+    margin-top: 8px;
+}
+
+/* ----------------------------process Markup end---------------------------- */
+/* ============================our misson Markup start========================== */
+#misson_part {
+    padding: 128px 0;
+    background: #EEF4FA;
+}
+
+.mission_left h2 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: var(--Dark-Blue);
+}
+
+.mission_left h3 {
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 56px;
+    color: var(--Dark-Blue);
+    margin: 16px 0;
+}
+
+.mission_left p {
+    max-width: 623px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: rgba(40, 41, 56, 0.70);
+}
+
+.mission_secound_row {
+    margin-top: 96px;
+}
+
+/* ----------------------------our misson Markup end---------------------------- */
+/* ============================Benefits Markup start========================== */
+#benefits_part {
+    padding: 128px 0;
+    background: var(--White);
+}
+
+.benefits_title h2 {
+    max-width: 630px;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 64px;
+    color: var(--Dark-Blue);
+    text-align: center;
+    margin: 0% auto;
+    margin-bottom: 48px;
+}
+
+.benefits_col {
+    padding: 50px 32px 48px 48px;
+    background: var(--Gray);
+}
+
+.benefits_col h2 i {
+    font-size: 26px;
+    color: var(--Royal-Blue);
+}
+
+.benefits_col h3 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    color: var(--Dark-Blue);
+    margin: 26px 0 12px;
+}
+
+.benefits_col p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: rgba(40, 41, 56, 0.70);
+}
+
+.benefits_third_row {
+    margin-top: 48px;
+    align-items: center;
+}
+
+.benefits_third_col h2 {
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 56px;
+    color: var(--Dark-Blue);
+}
+
+.benefits_third_col p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: var(--Dark-Blue);
+}
+
+/* ----------------------------Benefits Markup end---------------------------- */
+/* ============================team Markup start========================== */
+#team_part {
+    padding: 128px 0;
+    background: var(--Gray);
+}
+
+.team_title h2 {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 64px;
+    color: var(--Dark-Blue);
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.team_secound_row {
+    padding: 48px 0 32px;
+    background: var(--White);
+}
+
+.team_col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.team_col .team_img {
+    width: 168px;
+    height: 168px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    z-index: 2;
+    cursor: pointer;
+    position: relative;
+}
+
+.one_team_img {
+    background: url(../image/team\ person\ 1.png);
+}
+
+.secound_team_img {
+    background: url(../image/team\ person\ 2.png);
+}
+
+.third_team_img {
+    background: url(../image/team\ person\ 3.png);
+}
+
+.four_team_img {
+    background: url(../image/team\ person\ 4.png);
+}
+
+.team_img::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    background: linear-gradient(rgba(255, 255, 255, 0), #5239FA);
+    overflow: hidden;
+    border-radius: 50%;
+    z-index: -1;
+    opacity: 0;
+    visibility: hidden;
+    transition: all linear .3s;
+}
+
+.team_col .team_img:hover::after {
+    visibility: visible;
+    opacity: 1;
+}
+
+.team_img picture img {
+    max-width: 168px;
+    max-height: 168px;
+    border-radius: 50%;
+}
+
+.team_icon {
+    width: 100%;
+    position: absolute;
+    bottom: 5%;
+    left: 0%;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all linear .3s;
+}
+
+.team_img:hover .team_icon {
+    visibility: visible;
+    opacity: 1;
+    transition-delay: .3s;
+}
+
+.team_col h3 {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    color: var(--Dark-Blue);
+    margin: 30px 0 2px;
+}
+
+.team_col p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: var(--Dark-Blue);
+}
+
+.team_icon a i {
+    font-size: 16px;
+    color: var(--White);
+}
+
+/* ----------------------------team Markup end---------------------------- */
+/* ----------------------------About File end---------------------------- */
+/* ============================Price File start========================== */
+/* ============================Price Markup start========================== */
+#pricing_part {
+    padding: 128px 0;
+    background: var(--White);
+}
+
+.pricing_title h2 {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 64px;
+    color: var(--Dark-Blue);
+    text-align: center;
+}
+
+.pricing_title p {
+    max-width: 560px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: var(--Dark-Blue);
+    text-align: center;
+    margin: 0% auto;
+    margin-top: 16px;
+    margin-bottom: 64px;
+}
+
+.pricing_col {
+    width: 100%;
+    height: 100%;
+    padding: 62px 40px;
+    background: var(--Gray);
+    border-radius: 12px;
+    transition: all linear .2s;
+}
+
+.pricing_col:hover {
+    background: var(--Background-Color);
+}
+
+.pricing_col h3 {
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 56px;
+    color: var(--Dark-Blue);
+    transition: all linear .2s;
+}
+
+.pricing_col:hover h3 {
+    color: var(--White);
+}
+
+.pricing_col h3 span {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: var(--Royal-Blue);
+    transition: all linear .2s;
+}
+
+.pricing_col:hover h3 span {
+    color: var(--Yellow-Color);
+}
+
+.pricing_col h4 {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    color: var(--Dark-Blue);
+    margin: 20px 0 8px;
+    transition: all linear .2s;
+}
+
+.pricing_col:hover h4 {
+    color: var(--White);
+}
+
+.pricing_col p {
+    max-width: 281px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: rgba(40, 41, 56, 0.70);
+}
+
+.pricing_col:hover p {
+    color: rgba(255, 255, 255, 0.70);
+}
+
+.price_list {
+    margin: 78px 0 79px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.price_list .price_item {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--Dark-Blue);
+    line-height: 28px;
+}
+
+.pricing_col:hover .price_list .price_item {
+    color: var(--White);
+}
+
+.price_list .price_item span {
+    font-size: 20px;
+    color: #97DAAD;
+    margin-right: 12px;
+}
+
+.pricing_button {
+    text-align: center;
+}
+
+.pricing_button a {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 32px;
+    color: var(--Gray);
+    padding: 16px 77px;
+    background: var(--Dark-Blue);
+    border-radius: 41px;
+    transition: all linear .3s;
+}
+
+.pricing_col:hover .pricing_button a {
+    color: var(--Dark-Blue);
+    background: var(--Yellow-Color);
+}
+
+.third_price_list {
+    margin: 44px 0 65px;
+}
+
+/* ----------------------------Price Markup end---------------------------- */
+/* ----------------------------Price File end---------------------------- */
+/* ============================Feature File start========================== */
+/* ============================banner Markup start========================== */
+.feature_banner_part {
+    padding: 128px 0 !important;
+}
+
+.feature_banner_heading p {
+    max-width: 562px;
+    margin: 32px 0;
+}
+
+.feature_banner_button a {
+    padding: 16px 48px;
+}
+
+/* ----------------------------banner Markup end---------------------------- */
+/* ============================benefits Markup start========================== */
+.feature_mission_part {
+    background: var(--White) !important;
+}
+
+.feature_benefits_part {
+    padding: 96px 0 0 0 !important;
+}
+
+.feature_benefits_part .benefits_third_row {
+    margin-top: 0px;
+    margin-bottom: 96px;
+}
+
+.mission_left h3 {
+    max-width: 624px;
+}
+
+#mission_bottom {
+    padding: 128px 0;
+    background: var(--Gray);
+}
+
+#mission_bottom .mission_secound_row {
+    margin-top: 0px;
+}
+
+.feature_msn_lst_prt {
+    background: rgba(252, 217, 128, 0.10) !important;
+}
+
+/* ----------------------------benefits Markup end---------------------------- */
+/* ----------------------------Feature File end---------------------------- */
+/* ============================work File start========================== */
+/* ============================work hero Markup start========================== */
+#work_hero {
+    padding: 96px 0;
+    background: var(--Gray);
+}
+
+.work_hero_heading {
+    text-align: center;
+}
+
+.work_hero_heading h2 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    color: var(--Dark-Blue);
+}
+
+.work_hero_heading h3 {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 64px;
+    color: var(--Dark-Blue);
+    margin: 4px 0 24px;
+}
+
+.work_hero_heading p {
+    max-width: 733px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    color: var(--Dark-Blue);
+    margin: 0% auto;
+}
+
+.work_hero_icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 32px;
+}
+
+.work_hero_icon a i {
+    font-size: 18px;
+    color: var(--Dark-Blue);
+    transition: all linear .3s;
+}
+
+.work_hero_icon a i:hover {
+    color: var(--Yellow-Color);
+    transform: scale(1.2);
+}
+
+/* ----------------------------work hero Markup end---------------------------- */
+/* ============================portfolio Markup start========================== */
+#portfolio {
+    padding: 96px 0 0;
+    background: var(--White);
+}
+
+.nav-tabs .nav-link {
+    border: none;
+}
+
+.nav-tabs {
+    border: none;
+    justify-content: center;
+    margin-bottom: 48px;
+}
+
+.portfolio_navs .nav-tabs .nav-link {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 38px;
+    color: var(--Dark-Blue);
+}
+
+.portfolio_navs .nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    color: var(--Royal-Blue);
+}
+
+.portfolio_row {
+    row-gap: 64px;
+}
+
+.portfolio_col h2 {
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 56px;
+    color: var(--Dark-Blue);
+    margin-top: 24px;
+    margin-bottom: 12px;
+}
+
+.portfolio_col p {
+    max-width: 623px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: var(--Dark-Blue);
+}
+
+.portfolio_col h3 {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--Dark-Blue);
+    margin-top: 24px;
+}
+
+.portfolio_col h3 span {
+    margin-left: 10px;
+}
+
+/* ----------------------------portfolio Markup end---------------------------- */
+/* ============================great Markup start========================== */
+#great_part {
+    padding: 128px 0;
+    background: var(--White);
+}
+
+.great_heading h2 {
+    max-width: 730px;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 64px;
+    color: var(--Dark-Blue);
+    text-align: center;
+    margin: 0% auto;
+}
+
+.great_heading p {
+    max-width: 562px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: rgba(40, 41, 56, 0.70);
+    text-align: center;
+    margin: 0% auto;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.great_button {
+    text-align: center;
+}
+
+.great_button a {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 32px;
+    color: var(--Dark-Blue);
+    padding: 16px 66px;
+    background: var(--Yellow-Color);
+    border-radius: 41px;
+    transition: all linear .3s;
+    border: 2px solid var(--Yellow-Color);
+}
+
+.great_button a:hover {
+    background: transparent;
+    color: var(--Royal-Blue);
+}
+
+/* ----------------------------great Markup end---------------------------- */
+/* ----------------------------work File end---------------------------- */
+/* ============================Blog File start========================== */
+/* ============================environment Markup start========================== */
+#environment {
+    padding: 128px 0;
+    background: var(--White);
+}
+
+.environment_title h2 {
+    max-width: 949px;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 64px;
+    color: var(--Dark-Blue);
+    text-align: center;
+    margin: 0% auto;
+    margin: 0% auto;
+}
+
+.environment_title h3 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    color: rgba(40, 41, 56, 0.87);
+    margin-top: 16px;
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+.environment_title h3 span {
+    color: var(--Dark-Blue);
+}
+
+.environment_title p {
+    max-width: 831px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: var(--Dark-Blue);
+    text-align: center;
+    margin: 0% auto;
+    margin-top: 48px;
+    margin-bottom: 16px;
+}
+
+.environment_button {
+    text-align: center;
+}
+
+.environment_button a {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: rgba(37, 5, 242, 0.70);
+    margin-top: 16px;
+    text-align: center;
+    margin: 0% auto;
+}
+
+/* ----------------------------environment Markup end---------------------------- */
+/* ============================our_blog Markup start========================== */
+#our_blog_part {
+    padding-bottom: 128px;
+    background: var(--White);
+}
+
+.our_blog_title h2 {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 64px;
+    color: var(--Dark-Blue);
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.our_blog_row {
+    row-gap: 64px;
+}
+
+.our_blog_col h3 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: rgba(40, 41, 56, 0.70);
+    margin: 32px 0 16px;
+}
+
+.our_blog_col h4 {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    color: var(--Dark-Blue);
+}
+
+.our_blog_col p {
+    max-width: 404px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: var(--Dark-Blue);
+    margin: 16px 0 24px;
+}
+
+.our_blog_col .banner_scnd_button a {
+    color: var(--Royal-Blue);
+}
+
+.our_blog_col .banner_scnd_button a span {
+    color: var(--Dark-Blue);
+}
+
+/* ----------------------------our_blog Markup end---------------------------- */
+/* ----------------------------Blog File end---------------------------- */
+/* ============================Read case file start========================== */
+/* ============================design case Markup start========================== */
+#design_case_part {
+    padding: 128px 0 0;
+    background: var(--White);
+}
+
+.design_case_title h2 {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    color: rgba(40, 41, 56, 0.80);
+}
+
+.design_case_title h3 {
+    max-width: 646px;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 64px;
+    color: var(--Dark-Blue);
+    margin: 12px 0 16px;
+}
+
+.design_case_title p {
+    max-width: 817px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: rgba(40, 41, 56, 0.70);
+    margin-bottom: 48px;
+}
+
+.cliend_link_col h2 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: rgba(40, 41, 56, 0.80);
+    margin: 48px 0 4px;
+}
+
+.cliend_link_col .design_client_link {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    color: var(--Dark-Blue);
+    margin-bottom: 32px;
+}
+
+.read_border {
+    border-bottom: 1px solid rgba(40, 41, 56, 0.30);
+}
+
+/* ----------------------------design case Markup end---------------------------- */
+/* ============================read_about Markup start========================== */
+#case_about {
+    padding: 96px 0 0;
+    background: var(--White);
+}
+
+.case_about_heading h2 {
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 56px;
+    color: var(--Dark-Blue);
+}
+
+.case_about_heading h3 {
+    max-width: 837px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: rgba(40, 41, 56, 0.70);
+    margin: 12px 0 24px;
+}
+
+.case_about_list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.case_about_list .case_about_item {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: rgba(40, 41, 56, 0.70);
+}
+
+.case_about_list .case_about_item {
+    list-style: disc;
+}
+
+.case_about_heading picture .case_about_img {
+    margin: 64px 0;
+}
+
+.case_keywords_col {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+    gap: 28px;
+}
+
+.case_keywords_col .case_keywords {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32px;
+    color: rgba(40, 41, 56, 0.70);
+    transition: all linear .3s;
+}
+
+.case_keywords_col .keywords_modifier {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+}
+
+.case_keywords_col .case_keywords:hover {
+    color: var(--Royal-Blue);
+}
+
+.case_keywords_col {
+    margin-top: 96px;
+    padding: 24px 0;
+    border-top: 1px solid rgba(40, 41, 56, 0.20);
+    border-bottom: 1px solid rgba(40, 41, 56, 0.20);
+}
+
+/* ----------------------------read_about Markup end---------------------------- */
+/* ============================read_together Markup start========================== */
+#case_together {
+    padding: 128px 0;
+    background: var(--White);
+}
+
+.case_together_heading h2 {
+    max-width: 844px;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 64px;
+    color: var(--Dark-Blue);
+    text-align: center;
+    margin: 0% auto;
+}
+
+.case_together_heading h3 {
+    max-width: 624px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    color: rgba(40, 41, 56, 0.70);
+    text-align: center;
+    margin: 0% auto;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+/* ----------------------------read_together Markup end---------------------------- */
+/* ----------------------------case file end---------------------------- */
+/* ============================read file start========================== */
+/* ============================read environment Markup start========================== */
+.read_col_heading .read_common_head .read_common_heading {
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 64px;
+    color: var(--Dark-Blue);
+    margin-top: 48px;
+}
+
+.read_col_heading p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: rgba(40, 41, 56, 0.70);
+    margin-top: 32px;
+}
+
+.read_common_head .case_about_list {
+    margin-top: 24px;
+}
+
+.read_common_head .read_heading_modifier {
+    margin-top: 40px !important;
+}
+
+.read_col_img picture img {
+    margin-top: 32px;
+}
+
+.read_scnd_heading_modifier {
+    margin-top: 56px !important;
+}
+
+/* ----------------------------read environment Markup end---------------------------- */
+/* ----------------------------read file end---------------------------- */
+/* ============================contact file start========================== */
+/* ============================contact Markup start========================== */
+#contact_us {
+    padding: 128px 0;
+    background: var(--White);
+}
+
+.contact_title h2 {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 64px;
+    color: var(--Dark-Blue);
+    text-align: center;
+}
+
+.contact_title p {
+    max-width: 562px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: rgba(40, 41, 56, 0.70);
+    margin: 0% auto;
+    text-align: center;
+    margin-top: 16px;
+    margin-bottom: 64px;
+}
+
+.contact_form {
+    padding: 55px 77px 70px;
+    background: var(--Gray);
+}
+
+.contact_form h3 {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32px;
+    color: #000000;
+    margin-bottom: 6px;
+}
+
+.contact_form_item {
+    width: 100%;
+}
+
+.contact_form input,
+#contact_message {
+    width: 100%;
+    padding: 18px 32px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: var(--Dark-Blue);
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 8px;
+    resize: none;
+}
+
+.contact_form input::placeholder,
+#contact_message {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #000000;
+}
+
+.contact_form_row {
+    row-gap: 24px;
+}
+
+.contact_form .great_button {
+    text-align: start;
+    margin-top: 32px;
+}
+
+.contact_form .great_button a {
+    color: var(--Gray);
+    background: var(--Dark-Blue);
+    border-color: var(--Dark-Blue);
+}
+
+.contact_form .great_button a:hover {
+    background: transparent;
+    color: var(--Dark-Blue);
+}
+
+/* ----------------------------contact Markup end---------------------------- */
+/* ----------------------------contact file end---------------------------- */
+/* ============================privacy filestart========================== */
+/* ============================privacy Markup start========================== */
+#privacy_part {
+    padding: 128px 0;
+    background: var(--White);
+}
+
+.privacy_title h2 {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 64px;
+    color: var(--Dark-Blue);
+    text-align: center;
+}
+
+.privacy_title h3 {
+    max-width: 562px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: rgba(40, 41, 56, 0.70);
+    text-align: center;
+    margin: 0% auto;
+    margin-top: 16px;
+    margin-bottom: 64px;
+}
+
+.privacy_heading h4 {
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 56px;
+    color: var(--Dark-Blue);
+}
+
+.privacy_heading p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: rgba(40, 41, 56, 0.70);
+    margin: 32px 0 24px;
+}
+
+.privacy_heading p:last-child {
+    margin-bottom: 0px;
+}
+
+/* ----------------------------privacy Markup end---------------------------- */
+/* ----------------------------privacy file end---------------------------- */

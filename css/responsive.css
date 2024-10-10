@@ -1,0 +1,502 @@
+@media (max-width: 575.98px) {
+/* ========================menu markup start====================== */
+.navbar-toggler {
+    padding: 6px 14px;
+    background-color: #FFFFFF;
+}
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+.navbar_icon{
+    font-size: 18px;
+    transition: all linear .3s;
+}
+.navbar-toggler:hover .navbar_icon{
+    color: #FCD980;
+}
+.navbar-collapse {
+	flex-basis: 100%;
+	flex-grow: 1;
+	align-items: center;
+	background: #FFFFFF;
+    margin-top: 15px;
+	padding-bottom: 15px;
+	border-radius: 10px;
+}
+.navbar-nav {
+    padding: 20px 0;
+	gap: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar-nav .menu-item .menu-link {
+	color: #282938;
+}
+.navbar-nav .menu-item .menu-link:hover {
+	color: #FCD980;
+}
+.menu_button {
+	text-align: center;
+}
+.menu_button a {
+	color: #282938;
+	border-color: #282938;
+    margin-left: 0px;
+    padding: 12px 32px;
+}
+/* -----------------------menu markup end------------------------- */
+/* ========================Banner markup start====================== */
+#banner_part {
+	padding: 120px 0 100px;
+}
+.banner_heading h1 {
+	font-size: 36px;
+	line-height: 48px;
+}
+.banner_heading p {
+	font-size: 14px;
+	line-height: 26px;
+	margin-top: 16px;
+}
+.banner_button {
+	text-align: center;
+}
+.banner_button a {
+	padding: 10px 35px;
+	font-size: 16px;
+}
+.banner_scnd_button{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+/* -----------------------Banner markup end------------------------- */
+/* ========================work markup start====================== */
+#work_part {
+	padding: 60px 0;
+}
+.work_left h2 {
+	font-size: 32px;
+}
+.work_left p {
+	font-size: 14px;
+	margin: 12px 0;
+}
+.work_left .banner_scnd_button {
+	margin-top: 0px; 
+	text-align: start !important;
+}
+.work_right{
+    margin-top: 30px;
+}
+/* -----------------------work markup end------------------------- */
+/* ========================project markup start====================== */
+.project_title_left h2 {
+	font-size: 28px;
+}
+
+.project_left_overlay {
+	padding: 0px 10px 0px 10px;
+}
+.project_left_overlay h3 {
+	font-size: 13px;
+	line-height: 14px;
+}
+.project_left_overlay p {
+	font-size: 12px;
+	line-height: 16px;
+	margin: 20px 0 20px;
+}
+.project_left_overlay .banner_scnd_button {
+	margin-bottom: 16px;
+}
+.project_left_overlay .banner_scnd_button a {
+	font-size: 10px;
+}
+/* -----------------------project markup end------------------------- */
+/* ========================design markup start====================== */
+#design_part {
+	padding: 20px 0;
+}
+.design_title h3 {
+	font-size: 24px;
+	line-height: 35px;
+}
+.design_col {
+	padding: 40px 25px 40px 25px;
+}
+.design_col p {
+	font-size: 14px;
+	line-height: 22px;
+}
+/* -----------------------design markup end------------------------- */
+/* ========================client markup start====================== */
+#client_say {
+	padding: 60px 0;
+}
+.client_left h2 {
+	font-size: 30px;
+	line-height: 36px;
+}
+.client_slider{
+    margin-top: 50px;
+}
+.client_slider_item h3 {
+	font-size: 18px;
+	line-height: 26px;
+}
+/* -----------------------client markup end------------------------- */
+/* ========================faq markup start====================== */
+.faq_left h2 {
+	font-size: 26px;
+	line-height: 36px;
+}
+.faq_left .faq_link a {
+	font-size: 16px;
+}
+.faq_accordion .accordion-item .accordion-button {
+	font-size: 12px;
+	line-height: 18px;
+}
+.accordion-body {
+	padding: 10px 24px;
+}
+.accordion-body p {
+	font-size: 12px;
+	line-height: 16px;
+	margin-left: 32px;
+}
+/* -----------------------faq markup end------------------------- */
+/* ========================inquiry markup start====================== */
+.inquiry_left {
+	padding-bottom: 120px;
+}
+.inquiry_left h2 {
+	font-size: 22px;
+	line-height: 27px;
+	padding-top: 60px;
+}
+.inquiry_right_content {
+	margin-top: 50px;
+}
+.inquiry_right_content p {
+	font-size: 14px;
+	line-height: 23px;
+}
+.form-control {
+	width: 95%;
+	padding: 5px 12px;
+}
+.inquiry_contact {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.form-control::placeholder{
+    font-size: 14px;
+}
+.inquiry_button .btn {
+	font-size: 16px;
+	padding: 6px 0;
+}
+.inquiry_button .secound_btn {
+	font-size: 18px;
+	margin-top: 16px;
+	margin-bottom: 35px;
+}
+
+/* -----------------------inquiry markup end------------------------- */
+/* ========================blog markup start====================== */
+.blog_title h2 {
+	font-size: 36px;
+	margin-bottom: 40px;
+}
+.blog_col h4 {
+	font-size: 18px;
+	line-height: 28px;
+}
+.blog_col p {
+	font-size: 14px;
+	line-height: 22px;
+    margin: 16px 0 15px;
+}
+/* -----------------------blog markup end------------------------- */
+/* ========================footer markup start====================== */
+.secound_footer {
+	padding: 32px 0 10px;
+}
+.footer_icon {
+	margin-bottom: 30px;
+}
+#footer_part .collapse:not(.show) {
+	display: contents;
+}
+#footer_part .navbar-nav {
+    gap: 10px;
+	padding: 16px 0;
+	column-gap: 20px;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+
+
+
+
+
+/* -----------------------footer markup end------------------------- */
+
+ }
+ @media (max-width: 767.98px) {
+    /* ========================menu markup start====================== */
+    .navbar-toggler {
+        padding: 6px 14px;
+        background-color: #FFFFFF;
+    }
+    .navbar-toggler:focus {
+        box-shadow: none;
+    }
+    .navbar_icon{
+        font-size: 18px;
+        transition: all linear .3s;
+    }
+    .navbar-toggler:hover .navbar_icon{
+        color: #FCD980;
+    }
+    .navbar-collapse {
+        flex-basis: 100%;
+        flex-grow: 1;
+        align-items: center;
+        background: #FFFFFF;
+        margin-top: 15px;
+        padding-bottom: 15px;
+        border-radius: 10px;
+    }
+    .navbar-nav {
+        padding: 20px 0;
+        gap: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .navbar-nav .menu-item .menu-link {
+        color: #282938;
+    }
+    .navbar-nav .menu-item .menu-link:hover {
+        color: #FCD980;
+    }
+    .menu_button {
+        text-align: center;
+    }
+    .menu_button a {
+        color: #282938;
+        border-color: #282938;
+        margin-left: 0px;
+        padding: 12px 32px;
+    }
+    /* -----------------------menu markup end------------------------- */
+    /* ========================Banner markup start====================== */
+    #banner_part {
+        padding: 120px 0 100px;
+    }
+    .banner_heading h1 {
+        font-size: 36px;
+        line-height: 48px;
+    }
+    .banner_heading p {
+        font-size: 14px;
+        line-height: 26px;
+        margin-top: 16px;
+    }
+    .banner_button {
+        text-align: center;
+    }
+    .banner_button a {
+        padding: 10px 35px;
+        font-size: 16px;
+    }
+    .banner_scnd_button{
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+    /* -----------------------Banner markup end------------------------- */
+    /* ========================work markup start====================== */
+    #work_part {
+        padding: 60px 0;
+    }
+    .work_left h2 {
+        font-size: 32px;
+    }
+    .work_left p {
+        font-size: 14px;
+        margin: 12px 0;
+    }
+    .work_left .banner_scnd_button {
+        margin-top: 0px; 
+        text-align: start !important;
+    }
+    .work_right{
+        margin-top: 30px;
+    }
+    /* -----------------------work markup end------------------------- */
+    /* ========================project markup start====================== */
+    .project_title_left h2 {
+        font-size: 28px;
+    }
+    
+    .project_left_overlay {
+        padding: 0px 10px 0px 10px;
+    }
+    .project_left_overlay h3 {
+        font-size: 13px;
+        line-height: 14px;
+    }
+    .project_left_overlay p {
+        font-size: 12px;
+        line-height: 16px;
+        margin: 20px 0 20px;
+    }
+    .project_left_overlay .banner_scnd_button {
+        margin-bottom: 16px;
+    }
+    .project_left_overlay .banner_scnd_button a {
+        font-size: 10px;
+    }
+    /* -----------------------project markup end------------------------- */
+    /* ========================design markup start====================== */
+    #design_part {
+        padding: 20px 0;
+    }
+    .design_title h3 {
+        font-size: 24px;
+        line-height: 35px;
+    }
+    .design_col {
+        padding: 40px 25px 40px 25px;
+    }
+    .design_col p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    /* -----------------------design markup end------------------------- */
+    /* ========================client markup start====================== */
+    #client_say {
+        padding: 60px 0;
+    }
+    .client_left h2 {
+        font-size: 30px;
+        line-height: 36px;
+    }
+    .client_slider{
+        margin-top: 50px;
+    }
+    .client_slider_item h3 {
+        font-size: 18px;
+        line-height: 26px;
+    }
+    /* -----------------------client markup end------------------------- */
+    /* ========================faq markup start====================== */
+    .faq_left h2 {
+        font-size: 26px;
+        line-height: 36px;
+    }
+    .faq_left .faq_link a {
+        font-size: 16px;
+    }
+    .faq_accordion .accordion-item .accordion-button {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .accordion-body {
+        padding: 10px 24px;
+    }
+    .accordion-body p {
+        font-size: 12px;
+        line-height: 16px;
+        margin-left: 32px;
+    }
+    /* -----------------------faq markup end------------------------- */
+    /* ========================inquiry markup start====================== */
+    .inquiry_left {
+        padding-bottom: 120px;
+    }
+    .inquiry_left h2 {
+        font-size: 22px;
+        line-height: 27px;
+        padding-top: 60px;
+    }
+    .inquiry_right_content {
+        margin-top: 50px;
+    }
+    .inquiry_right_content p {
+        font-size: 14px;
+        line-height: 23px;
+    }
+    .form-control {
+        width: 95%;
+        padding: 5px 12px;
+    }
+    .inquiry_contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .form-control::placeholder{
+        font-size: 14px;
+    }
+    .inquiry_button .btn {
+        font-size: 16px;
+        padding: 6px 0;
+    }
+    .inquiry_button .secound_btn {
+        font-size: 18px;
+        margin-top: 16px;
+        margin-bottom: 35px;
+    }
+    
+    /* -----------------------inquiry markup end------------------------- */
+    /* ========================blog markup start====================== */
+    .blog_title h2 {
+        font-size: 36px;
+        margin-bottom: 40px;
+    }
+    .blog_col h4 {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .blog_col p {
+        font-size: 14px;
+        line-height: 22px;
+        margin: 16px 0 15px;
+    }
+    /* -----------------------blog markup end------------------------- */
+    /* ========================footer markup start====================== */
+    .secound_footer {
+        padding: 32px 0 10px;
+    }
+    .footer_icon {
+        margin-bottom: 30px;
+    }
+    #footer_part .collapse:not(.show) {
+        display: contents;
+    }
+    #footer_part .navbar-nav {
+        gap: 10px;
+        padding: 16px 0;
+        column-gap: 20px;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    
+    
+    
+    
+    
+    /* -----------------------footer markup end------------------------- */
+    
+     }
